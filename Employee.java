@@ -65,18 +65,25 @@ class Employee {
 			System.out.print("Enter ID : ");
 
 			No = Integer.parseInt(sc1.nextLine());
+			int flag=0;
 
 			for (i = 0; i < n; i++) {
 
 				if (emp[i].eNo == No) {
 
 					System.out.println(emp[i]);
+					flag=1;
 
 					break;
 
-				}
-
+				}}
+			if(flag==0)
+			{
+				System.out.println("Enter valid id");
 			}
+				 
+
+			
 
 		}
 
